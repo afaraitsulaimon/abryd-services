@@ -13,7 +13,7 @@ import {serviceOfferDatas} from '../utils/ServicesOfferingData'
 
 import { animate, motion, useMotionValue, useTransform } from "framer-motion"
 import { BsPlus } from 'react-icons/bs'
-import {RiArrowDownSLine} from 'react-icons/ri'
+import {RiArrowDownSLine, RiArrowUpSLine} from 'react-icons/ri'
 import Testimony from '../components/Testimony'
 import Faq1 from '../assets/images/faq1.jpg'
 import Faq2 from '../assets/images/faq2.jpg'
@@ -94,13 +94,13 @@ useEffect(() => {
 
 
   return (
-    <div className='w-full max-h-full'>
+    <div className='w-full max-h-full bg-[#f8f9fd]'>
       <div>
       <Header/>
 
       </div>
 
-<main>
+<main >
   {/* start of the slider section*/}
   <section className='w-full h-[30em]'>
   <Splide options={{ 
@@ -258,9 +258,9 @@ useEffect(() => {
     <h1 className='text-4xl font-semibold text-center md:text-center lg:text-start '>Frequently Asks Questions</h1>
    <div className='text-1xl pt-5'>
     {freqAskQuestDatas.map((faq,index) => 
-     <div key={faq.id} className='pb-3'>
-       <div className='bg-green-500 p-3 flex justify-between items-center rounded-md cursor-pointer' onClick={() => toggleFAQ(index)}><span>{faq.Question}</span> <RiArrowDownSLine/></div>
-       {expandedIndex === index && <div className='pt-3'><span>{faq.Answer}</span></div>}
+     <div key={faq.id} className='pb-5'>
+       <div className= {expandedIndex === index ? 'bg-green-500 p-4 flex justify-between items-center rounded-2xl shadow-xl cursor-pointer' : 'bg-white p-4 flex justify-between items-center rounded-2xl shadow-xl cursor-pointer'} onClick={() => toggleFAQ(index)}><span>{faq.Question}</span> {expandedIndex === index ? <RiArrowUpSLine/> : <RiArrowDownSLine/>} </div>
+       {expandedIndex === index && <div className='pt-3 pb-4'><span>{faq.Answer}</span></div>}
      </div>
 
     )}
