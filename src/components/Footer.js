@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="flex mt-8 flex-col md:flex-row md:justify-between">
             <p className="w-full md:w-2/3 text-gray-400">We are ready to give you best of the best accounting services let's work hand in hand to make you have a an easy account flow and better tax settlement</p>
             <div className="w-44 pt-6 md:pt-0">
-                <Link to="/contact-us" className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">Contact US</Link>
+                <Link to="/contact-us" className="bg-[#22c55e] justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">Contact US</Link>
             </div>
         </div>
         <div className="flex flex-col">
