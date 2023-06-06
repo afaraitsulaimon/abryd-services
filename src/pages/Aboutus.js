@@ -24,7 +24,7 @@ const Aboutus = () => {
     </header>
 <main>
   {/* about top head start from here */}
-  <section className="w-full h-72 bg-red-500" style={backgroundImage} >
+  <section className="w-[100%] h-72 bg-red-500" style={backgroundImage} >
   <div className='w-full h-full bg-[#8fd0d2] opacity-70 pl-28 pt-48 bg-scroll'>
     <Link to='/' className='no-underline text-1xl font-mono'>Home</Link>
       <p className='font-semibold text-4xl'>About Us</p>
