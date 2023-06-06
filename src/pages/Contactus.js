@@ -3,9 +3,9 @@ import Header from '../components/Header'
 
 const Contactus = () => {
   return (
-    <div><Header/>
-    <p>abouut us</p>
-    </div>
+    <div className='w-full max-h-full bg-[#f8f9fd]'>
+      
+</div>
   )
 }
 
