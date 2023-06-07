@@ -17,9 +17,9 @@ const Footer = () => {
             </div>
         </div>
         <div className="flex flex-col">
-            <div className="flex mt-24 mb-12 flex-row justify-between">
+            <div className="flex mt-24 mb-12 flex-row justify-between items-center">
                 <div className="">
-                    <h2>Abryd Logo</h2>   
+                    <Link to='/' className="text-3xl text-[#22c55e] font-mono font-bold">Abryd</Link>  
                 </div>
                 <Link to="/about-us" className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">About</Link>
                 <Link to="/contact-us"  className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Contact Us</Link>

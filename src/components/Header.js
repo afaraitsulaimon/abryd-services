@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
+import AbrydLogo from '../assets/images/abryd-serv-logo.png'
 
 
 
@@ -15,8 +16,8 @@ const Header = () => {
           <div className="w-full h-full flex justify-between items-center">
             <div className="flex-shrink-0">
               <Link to="/"><img
-                className="h-8 w-8 cursor-pointer"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                className="h-8 w-16 rounded-sm cursor-pointer"
+                src={AbrydLogo}
                 alt="abryd-services"
               />
               </Link>
